@@ -78,8 +78,8 @@ function HeroSection() {
             <button className='btnDownload' onClick={openModal}>CHECK Resume</button>
             {/* <a href={resumePDF} download className='btnVideo'>Download Resume</a> */}
             <a href={resumePDF} download className='btnVideo'>
-              <FaDownload style={{ marginRight: '8px' }} /> Download Resume
-            </a>
+  <FaDownload style={{ marginRight: '8px' }} /> Download Resume
+</a>
           </div>
         </div>
 

@@ -1,0 +1,296 @@
+:root {
+  --blur-bg: rgba(255, 255, 255, 0.03);
+  --glass: rgba(255, 255, 255, 0.06);
+  --text: #ffffffee;
+  --hover: #16f9e6;
+  --accent: #ff3cac;
+  --soft-blue: #00c6ff;
+  --depth-shadow: rgba(0, 0, 0, 0.3);
+}
+
+body {
+  margin: 0;
+  background: #0d0d0d;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Navbar */
+.soul-navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 18px 2px;
+  z-index: 999;
+  background: var(--glass);
+  backdrop-filter: blur(14px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+  transition: all 0.3s ease;
+  height: 40px;
+}
+
+.soul-container {
+  max-width: 1280px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  
+}
+
+/* Logo */
+.soul-logo {
+  color: var(--text);
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  position: relative;
+  z-index: 2;
+}
+
+.soul-logo span {
+  background: linear-gradient(to right, var(--accent), var(--soft-blue));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.subtext {
+  font-size: 10px;
+  opacity: 0.5;
+  margin-top: 2px;
+}
+
+/* Hamburger Icon */
+.hamburger-svg {
+  display: none;
+  cursor: pointer;
+  z-index: 1001;
+  margin-left: auto;
+}
+
+.hamburger-icon-svg rect {
+  fill: white;
+  transition: all 0.4s ease;
+}
+
+/* Nav Links (default desktop) */
+.soul-links {
+  display: flex;
+  flex-direction: row;
+  gap: 32px;
+  list-style: none;
+  z-index: 2;
+}
+
+.soul-links li a {
+  color: var(--text);
+  text-decoration: none;
+  font-size: 14px;
+  position: relative;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+}
+
+.soul-links li a span {
+  position: relative;
+  z-index: 2;
+}
+
+.soul-links li a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  height: 2px;
+  width: 0;
+  background: var(--hover);
+  transition: width 0.3s ease;
+}
+
+.soul-links li a:hover::after {
+  width: 100%;
+}
+
+.soul-links li a:hover {
+  color: var(--hover);
+  text-shadow: 0 0 8px var(--hover);
+}
+
+/* Button */
+.soul-cta a {
+  position: relative;
+  padding: 10px 20px;
+  background: linear-gradient(135deg, #ff3cac, #784ba0, #2b86c5);
+  border-radius: 40px;
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
+  overflow: hidden;
+  text-decoration: none;
+  z-index: 2;
+}
+
+.soul-cta .aura {
+  position: absolute;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.1), transparent 70%);
+  animation: auraPulse 4s infinite ease-in-out;
+  top: -50%;
+  left: -50%;
+  z-index: 1;
+  pointer-events: none;
+}
+
+@keyframes auraPulse {
+  0% {
+    transform: scale(1);
+    opacity: 0.6;
+  }
+
+  50% {
+    transform: scale(1.2);
+    opacity: 0.2;
+  }
+
+  100% {
+    transform: scale(1);
+    opacity: 0.6;
+  }
+}
+
+/* Wave letters */
+.wave-dance {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.wave-letter {
+  display: inline-block;
+  color: var(--text);
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+  transition: color 0.4s ease;
+  animation: none;
+  font-weight: 550;
+  color: #cecfcf;
+}
+
+.wave-dance:hover .wave-letter.up {
+  animation: waveUp 0.6s ease forwards;
+  animation-delay: calc(var(--i) * 80ms);
+  color: var(--hover);
+}
+
+.wave-dance:hover .wave-letter.down {
+  animation: waveDown 0.6s ease forwards;
+  animation-delay: calc(var(--i) * 80ms);
+  color: var(--hover);
+}
+
+@keyframes waveUp {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes waveDown {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/* Responsive */
+
+.soul-cta a,
+.soul-cta a:visited,
+.soul-cta a:hover,
+.soul-cta a:focus,
+.soul-cta a:active {
+  text-decoration: none !important;
+  color: white !important;
+  text-shadow: none !important;
+}
+
+@media (max-width: 760px) {
+  .soul-navbar {
+    height: auto;
+    padding: 12px 10px;
+  }
+
+  .soul-logo {
+    font-size: 18px;
+  }
+
+  .subtext {
+    font-size: 8px;
+  }
+
+  .hamburger-svg {
+    display: block;
+    z-index: 1001;
+  }
+
+  .soul-links {
+    position: absolute;
+    top: 40px;
+    left: 0;
+    right: 0;
+    background: #1e1e24f9;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+    gap: 18px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    display: none;
+  }
+
+  .soul-links.active {
+    display: flex;
+  }
+
+  .soul-links li a {
+    font-size: 13px;
+  }
+
+  .soul-cta a {
+    padding: 8px 16px;
+    font-size: 13px;
+  }
+
+  .wave-letter {
+    font-size: 13px;
+  }
+
+  .hamburger-icon-svg {
+    width: 24px;
+    height: 24px;
+  }
+
+  .hamburger-icon-svg rect {
+    height: 8px;
+  }
+
+  .soul-container {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 10px;
+  }
+}

@@ -1,21 +1,32 @@
 import express from 'express';
-import dotenv from 'dotenv';
-import cors from 'cors';
+import mongoose from 'mongoose';
+import cors from 'cors'; // ✅ Import cors
 import contactRoutes from './routes/contactRoutes.js';
-import connectDB from './config/db.js';
+import dotenv from 'dotenv';
 
 dotenv.config();
-connectDB(); 
+
 const app = express();
-// app.use(cors());
+const PORT = process.env.PORT || 5000;
+
+// ✅ Enable CORS for your frontend domain
 app.use(cors({
-  origin: 'https://your-vercel-site.vercel.app'
+  origin: 'https://nouman-naqbool-portfolio.vercel.app',
+  methods: ['POST', 'GET'],
+  credentials: true
 }));
 
 app.use(express.json());
 
 app.use('/api/contact', contactRoutes);
 
-app.listen(5000, () => {
-  console.log('🚀 Server running on http://localhost:5001');
+mongoose.connect(process.env.MONGO_URI, {
+  useNewUrlParser: true,
+  useUnifiedTopology: true
+}).then(() => {
+  app.listen(PORT, () => {
+    console.log(`Server running on port ${PORT}`);
+  });
+}).catch((error) => {
+  console.error('MongoDB connection error:', error);
 });
