@@ -5,7 +5,7 @@ This is my personal portfolio website built with the MERN stack (MongoDB, Expres
 
 ## 🚀 Live Preview
 
-[🔗 Visit Portfolio Website](#) (https://nouman-naqbool-portfolio.vercel.app/)
+ (https://nouman-naqbool-portfolio.vercel.app/)
 
 ---
 
