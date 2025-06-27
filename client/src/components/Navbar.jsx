@@ -25,22 +25,21 @@ function Navbar() {
           No<span>Mii</span>
           <div className="subtext">Creative Soul in Code</div>
         </div>
-{/* Menu Icon */}
-  <div className="soul-logo"></div>
-  <div
-    className={`hamburger-svg ${isOpen ? 'open' : ''}`}
-    onClick={() => setIsOpen(!isOpen)}
-  >
-    <svg viewBox="0 0 100 80" width="30" height="30" className="hamburger-icon-svg">
-      <rect width="100" height="10" rx="5"></rect>
-      <rect y="30" width="100" height="10" rx="5"></rect>
-      <rect y="60" width="100" height="10" rx="5"></rect>
-    </svg>
-  </div>
+        {/* Menu Icon */}
+        <div
+          className={`hamburger-svg ${isOpen ? 'open' : ''}`}
+          onClick={() => setIsOpen(!isOpen)}
+        >
+          <svg viewBox="0 0 100 80" width="30" height="30" className="hamburger-icon-svg">
+            <rect width="100" height="10" rx="5"></rect>
+            <rect y="30" width="100" height="10" rx="5"></rect>
+            <rect y="60" width="100" height="10" rx="5"></rect>
+          </svg>
+        </div>
 
-  <ul className={`soul-links ${isOpen ? 'active' : ''}`}>
-    {/* nav links */}
-  </ul>
+        <ul className={`soul-links ${isOpen ? 'active' : ''}`}>
+          {/* nav links */}
+        </ul>
 
 
         <ul className={`soul-links ${isOpen ? 'active' : ''}`}>

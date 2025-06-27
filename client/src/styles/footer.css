@@ -100,30 +100,6 @@ a{
   font-size: 1.1rem;
 }
 
-/* Social Icons */
-/* .footer-socials {
-  display: flex;
-  justify-content: center;
-  gap: 30px;
-  margin: 40px 0 20px;
-}
-
-.footer-socials a {
-  font-size: 1.6rem;
-  color: #7e74f1;
-  background: rgba(255, 255, 255, 0.08);
-  padding: 12px;
-  border-radius: 50%;
-  transition: transform 0.3s ease, background 0.3s ease, color 0.3s ease;
-}
-
-.footer-socials a:hover {
-  background: #7e74f1;
-  color: #fff;
-  transform: scale(1.1);
-  box-shadow: 0 0 15px #7e74f1;
-} */
-
 /* Footer Bottom */
 .footer-bottom {
   margin-top: 30px;
@@ -146,25 +122,6 @@ a{
 .footer-bottom .footer-policy-links a:hover {
   color: #fff;
 }
-
-@media (max-width: 768px) {
-  .footer-info-grid {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .footer-bottom {
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-    text-align: center;
-  }
-
-  .footer-bottom .footer-policy-links {
-    margin-top: 10px;
-  }
-}
-
 
 
 .styling-UL {
@@ -234,4 +191,79 @@ a{
 
 .styling-list:nth-child(4) a:before {
   background: #316b96;
+}
+
+
+
+@media screen and (max-width: 760px) {
+  footer {
+    padding: 40px 20px 30px;
+     width: 110vw;
+    overflow: hidden;
+    box-sizing: border-box;
+  }
+
+  .footer h2 {
+    font-size: 1.8rem;
+    margin-bottom: 30px;
+  }
+
+  .footer-info-grid {
+    gap: 30px;
+    padding: 0;
+  }
+
+  .info-block {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 12px;
+    padding: 15px;
+  }
+
+  .info-icon {
+    font-size: 2rem;
+    margin-top: 0;
+  }
+
+  .info-text p {
+    font-size: 0.85rem;
+  }
+
+  h4 {
+    font-size: 1.1rem;
+  }
+
+  .send-email {
+    margin-left: 0;
+  }
+
+  .email-link {
+    font-size: 0.9rem;
+    padding: 8px 12px;
+  }
+
+  .styling-UL {
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+
+  .styling-link {
+    width: 36px;
+    height: 36px;
+    font-size: 28px;
+    line-height: 43px;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    text-align: center;
+    font-size: 0.85rem;
+    gap: 10px;
+  }
+
+  .footer-bottom .footer-policy-links a {
+    margin: 0 10px;
+    display: inline-block;
+  }
 }

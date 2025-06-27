@@ -7,7 +7,7 @@ import Stats from './components/stats'
 import Skills from './components/skills';
 import Contact from './components/contact';
 import Footer from './components/footer';
-// import './App.css'
+import './App.css'
 
 function App() {
   return (

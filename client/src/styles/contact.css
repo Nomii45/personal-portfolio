@@ -1,5 +1,5 @@
 .contact-section {
-  padding: 80px 60px;
+   padding: 10px 60px;
   background-color: #1f1f2e;
   color: #fff;
 }
@@ -63,4 +63,40 @@
 
 .contact-form button:hover {
   background: #5a50d8;
+}
+
+@media screen and (max-width: 760px) {
+  .contact-section {
+    padding: 40px 20px;
+      width: 110vw;
+    overflow: hidden;
+    box-sizing: border-box;
+  }
+
+  .contact-title {
+    font-size: 1.8rem;
+  }
+
+  .contact-container {
+    padding: 20px;
+  }
+
+  .contact-form {
+    gap: 15px;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    font-size: 0.95rem;
+    padding: 12px 15px;
+  }
+
+  .contact-form textarea {
+    height: 120px;
+  }
+
+  .contact-form button {
+    font-size: 0.95rem;
+    padding: 12px 20px;
+  }
 }

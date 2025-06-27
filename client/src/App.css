@@ -1,17 +1,6 @@
-/* .scroll-offset {
-  position: relative;
-}
-
-.scroll-offset::before {
-  content: "";
-  display: block;
-  height: 80px;
-  margin-top: -80px;
-  visibility: hidden;
-} */
-
-/* Add this in index.css or App.css */
+/* === Global Styles === */
 html {
-  scroll-behavior: smooth;   /* smooth scroll */
-  scroll-padding-top: 80px;   /* navbar height */
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px; /* to avoid navbar overlap */
 }
+
