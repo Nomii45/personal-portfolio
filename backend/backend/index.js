@@ -7,7 +7,11 @@ import connectDB from './config/db.js';
 dotenv.config();
 connectDB(); 
 const app = express();
-app.use(cors());
+// app.use(cors());
+app.use(cors({
+  origin: 'https://your-vercel-site.vercel.app'
+}));
+
 app.use(express.json());
 
 app.use('/api/contact', contactRoutes);
