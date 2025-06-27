@@ -393,14 +393,26 @@
     padding: 0 8px;
   }
 
+ 
   .btnDownload {
-    width: 90%;
+    width: 150px;
     max-width: 200px;
-    height: 55px;
+    height: 60px;
     font-size: 14px;
     padding: 12px 16px;
     margin: 0 auto;
   }
+
+  .btnVideo {
+    margin: 20px 40px;
+    width: 150px;
+    max-width: 200px;
+    height: 32px;
+    font-size: 14px;
+    padding: 12px 16px;
+    margin: 2px 20px;
+  }
+
 
   .hero-image-wrapper {
   position: relative;
