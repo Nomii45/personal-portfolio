@@ -23,7 +23,7 @@ function Contact() {
 
     try {
       const res = await fetch(
-        // ✅ Updated this line to your deployed backend URL
+        // Updated this line to your deployed backend URL
         'https://personal-portfolio-production-dd73.up.railway.app/api/contact', 
         {
           method: 'POST',
