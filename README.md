@@ -12,10 +12,8 @@ This is my personal portfolio website built with the MERN stack (MongoDB, Expres
 ## 🔧 Technologies Used
 
 - 🌐 React JS
-- 🎨 Tailwind CSS
 - 🧠 Node.js + Express (for backend)
 - 🗃️ MongoDB (for contact form / data)
-- ⚙️ React Router DOM
 - 📩 Email or Form Handling (Node backend)
 
 ---
