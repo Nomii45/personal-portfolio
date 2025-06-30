@@ -1,0 +1,6 @@
+/* === Global Styles === */
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px; /* to avoid navbar overlap */
+}
+

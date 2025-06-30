@@ -1,3 +1,28 @@
+// import React from 'react'
+// import '../styles/contact.css'
+// function contact() {
+//     return (
+//         <section className='contact-section'>
+//             <div className="contact-container">
+//                 <h3 className='section-title'>Get in Touch</h3>
+//                 <p className='tag'>Let's work together — feel free to reach out!</p>
+//                 <form className='contact-form'>
+//                         <input type='text' placeholder='Your Name' required />
+                       
+                   
+//                      <input type='text' placeholder='Your Email' required />
+//                    <textarea type='text' placeholder='Your Message' rows={6}/>
+
+//                     <button type="submit" className="contact-button">Send Message</button>
+//                 </form>
+//             </div>
+//         </section>
+//     )
+// }
+
+// export default contact
+
+
 import React, { useState } from 'react';
 import '../styles/contact.css';
 import axios from 'axios';
@@ -22,15 +47,12 @@ function Contact() {
     setStatus('Sending...');
 
     try {
-      const res = await fetch(
-        // Updated this line to your deployed backend URL
-        'https://personal-portfolio-production-dd73.up.railway.app/api/contact', 
-        {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify(formData)
-        }
-      );
+     const res = await fetch('/api/contact', {
+
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(formData)
+      });
 
       const result = await res.json();
 
