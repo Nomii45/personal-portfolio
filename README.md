@@ -1,7 +1,7 @@
 ﻿# personal-portfolio
 # 💼 Personal Portfolio
 
-This is my personal portfolio website built with the MERN stack (MongoDB, Express, React, Node.js). It showcases my projects, skills, and contact information in a responsive, modern design.
+This is my personal portfolio website built with the MERN stack (React.js, Node.js, Express and MongoDB). It showcases my projects, skills, and contact information in a responsive and modern design.
 
 ## 🚀 Live Preview
 
