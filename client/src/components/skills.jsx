@@ -2,12 +2,12 @@ import React, { useEffect, useRef, useState } from 'react';
 import '../styles/skills.css';
 
 const skillData = [
-  { name: 'HTML', level: 90 },
-  { name: 'CSS', level: 93 },
-  { name: 'JavaScript', level: 70 },
-  { name: 'React', level: 85 },
-  { name: 'Node.js', level: 75 },
-  { name: 'MongoDB', level: 85 },
+  { name: 'HTML', level: 80 },
+  { name: 'CSS', level: 75 },
+  { name: 'JavaScript', level: 60 },
+  { name: 'React', level: 65 },
+  { name: 'Node.js', level: 50 },
+  { name: 'MongoDB', level: 55 },
 ];
 
 function Skills() {

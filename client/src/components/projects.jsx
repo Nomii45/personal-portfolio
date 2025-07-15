@@ -1,5 +1,3 @@
-
-
 import React from 'react';
 import '../styles/project.css';
 import Google from '../assets/google.png';
@@ -12,19 +10,19 @@ function Projects() {
       title: 'Google Clone',
       category: 'google',
       Image: Google,
-      link: 'https://your-google-clone.vercel.app/' // Update with actual link
+      link: 'https://your-google-clone.vercel.app/' 
     },
     {
-      title: 'Social Chat App',
+      title: 'PulseTalk',
       category: 'Chat app',
       Image: ChatApp,
-      link: 'https://your-chat-app.vercel.app/' // Update with actual link
+      link: 'https://pulse-talk-mern-stack-chat-app.vercel.app/' 
     },
     {
       title: 'Personal Portfolio',
       category: 'Portfolio',
       Image: Portfolio,
-      link: 'https://nouman-naqbool-portfolio.vercel.app/' // Your real portfolio link
+      link: 'https://nouman-naqbool-portfolio.vercel.app/' 
     }
   ];
 
