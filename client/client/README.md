@@ -1,37 +1,3 @@
-<<<<<<< HEAD
-﻿# personal-portfolio
-# 💼 Personal Portfolio
-
-This is my personal portfolio website built with the MERN stack (React.js, Node.js, Express and MongoDB). It showcases my projects, skills, and contact information in a responsive and modern design.
-
-## 🚀 Live Preview
-
- (https://nouman-naqbool-portfolio.vercel.app/)
-
----
-
-## 🔧 Technologies Used
-
-- 🌐 React JS
-- 🧠 Node.js + Express (for backend)
-- 🗃️ MongoDB (for contact form / data)
-- ⚙️ React Router DOM
-- 📩 Email or Form Handling (Node backend)
-
----
-
-## 📂 Project Structure
-
-```bash
-personal-portfolio/
-├── client/          # React Frontend
-│   ├── public/
-│   └── src/
-├── server/          # (Optional) Express Backend
-├── .gitignore
-├── README.md
-└── package.json
-=======
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -102,4 +68,3 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
->>>>>>> 4ad9b46 (Initial backend commit)

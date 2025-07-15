@@ -1,12 +1,3 @@
-<<<<<<< HEAD
-node_modules/
-.env
-build/
-dist/
-.DS_Store
-*.log
-.vscode/
-=======
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
 # dependencies
@@ -30,4 +21,3 @@ dist/
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
->>>>>>> 4ad9b46 (Initial backend commit)
