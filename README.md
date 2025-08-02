@@ -1,4 +1,4 @@
-﻿# personal-portfolio
+hi﻿# personal-portfolio
 # 💼 Personal Portfolio
 
 This is my personal portfolio website built with the MERN stack (MongoDB, Express, React, Node.js). It showcases my projects, skills, and contact information in a responsive, modern design.
@@ -31,3 +31,4 @@ personal-portfolio/
 ├── .gitignore
 ├── README.md
 └── package.json
+
