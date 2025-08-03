@@ -7,8 +7,6 @@ This is my personal portfolio website built with the MERN stack (MongoDB, Expres
 
  (https://nouman-naqbool-portfolio.vercel.app/)
 
----
-
 ## 🔧 Technologies Used
 
 - 🌐 React JS
@@ -31,4 +29,5 @@ personal-portfolio/
 ├── .gitignore
 ├── README.md
 └── package.json
+
 
