@@ -1,7 +1,6 @@
 import React, { useEffect, useMemo, useRef, useState } from "react";
 import { motion } from "framer-motion";
 import { ExternalLink, Github, Clock, Rocket } from "lucide-react";
-
 import Google from "../assets/google.png";
 import ChatApp from "../assets/chatt.png";
 import Portfolio from "../assets/portfolio.png";
@@ -127,9 +126,9 @@ export default function ProjectsSection() {
   <motion.div
     key={`${p.id}-${idx}`}
     className="flex w-80 flex-col overflow-hidden rounded-2xl bg-white shadow-md ring-1 ring-zinc-200 flex-shrink-0"
-    initial={{ opacity: 0, y: 100 }} // start below
-    whileInView={{ opacity: 1, y: 0 }} // slide up into view
-    exit={{ opacity: 0, y: -100 }} // slide out upwards
+    initial={{ opacity: 0, y: 100 }} 
+    whileInView={{ opacity: 1, y: 0 }} 
+    exit={{ opacity: 0, y: -100 }} 
     transition={{ duration: 0.8, ease: "easeOut", delay: idx * 0.1 }}
     viewport={{ once: true, amount: 0.3 }}
   >

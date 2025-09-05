@@ -160,7 +160,7 @@ export default function Navbar() {
           </li>
         </ul>
 
-        {/* ===== Mobile Navbar ===== */}
+        {/* Mobile Navbar */}
         <div className="md:hidden flex items-center gap-3">
           {/* Day/Night toggle */}
           <button onClick={toggleDarkMode}>
@@ -181,7 +181,7 @@ export default function Navbar() {
         </div>
       </div>
 
-      {/* ===== Mobile Dropdown ===== */}
+      {/* Mobile Dropdown */}
       <div
         className={`md:hidden overflow-hidden transition-all duration-500 ease-in-out ${
           isOpen ? "max-h-96 opacity-100" : "max-h-0 opacity-0"

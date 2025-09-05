@@ -1,4 +1,3 @@
-// src/components/ThreeBackground.jsx
 import { useEffect, useRef } from "react";
 import * as THREE from "three";
 
@@ -138,7 +137,7 @@ export default function ThreeBackground() {
     <div
       ref={mountRef}
       className="fixed top-0 left-0 w-screen h-screen -z-10 pointer-events-none"
-      style={{ filter: "blur(3px)" }} // 👈 blur the 3D animation
+      style={{ filter: "blur(3px)" }} 
     />
   );
 }

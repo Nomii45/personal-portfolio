@@ -7,11 +7,10 @@ import Services from "./components/service";
 import Skills from "./components/skills";
 import Contact from "./components/contact";
 import Footer from "./components/footer";
-import "./App.css";
 import About from "./components/About";
-import CosmosBackground from "./components/CosmosBackground";
-import ThreeBackground from "./components/ThreeBackground";
 import WhatsAppButton from "./components/wattsapp";
+import "./App.css";
+
 
 export default function App() {
   useEffect(() => {
@@ -21,10 +20,6 @@ export default function App() {
 
   return (
     <div className="relative w-full min-h-screen">
-      {/* Cosmic background always behind */}
-      {/* <CosmosBackground />
-      <ThreeBackground /> */}
-      {/* Foreground content */}
       <WhatsAppButton />
       <div className="relative z-10">
         <CustomCursor />
