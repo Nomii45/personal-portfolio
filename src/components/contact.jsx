@@ -36,14 +36,14 @@
 //       const result = await res.json();
 
 //       if (res.ok) {
-//         setStatus("✅ Message sent successfully!");
+//         setStatus("Message sent successfully!");
 //         setFormData({ name: "", email: "", message: "", copy: false });
 //       } else {
-//         setStatus(result.message || "⚠️ Something went wrong.");
+//         setStatus(result.message || "Something went wrong.");
 //       }
 //     } catch (err) {
 //       console.error("Error submitting contact form:", err);
-//       setStatus("❌ Failed to send message. Try again later.");
+//       setStatus("Failed to send message. Try again later.");
 //     } finally {
 //       setLoading(false);
 //     }
@@ -141,9 +141,9 @@
 //                 {status && (
 //                   <p
 //                     className={`text-sm mt-2 ${
-//                       status.includes("✅")
+//                       status.includes("")
 //                         ? "text-success"
-//                         : status.includes("❌")
+//                         : status.includes("")
 //                         ? "text-error"
 //                         : "text-warning"
 //                     }`}
@@ -261,14 +261,14 @@ function Contact() {
       const result = await res.json();
 
       if (res.ok) {
-        setStatus("✅ Message sent successfully!");
+        setStatus("Message sent successfully!");
         setFormData({ name: "", email: "", message: "", copy: false });
       } else {
-        setStatus(result.message || "⚠️ Something went wrong.");
+        setStatus(result.message || "Something went wrong.");
       }
     } catch (err) {
       console.error("Error submitting contact form:", err);
-      setStatus("❌ Failed to send message. Try again later.");
+      setStatus("Failed to send message. Try again later.");
     } finally {
       setLoading(false);
     }
@@ -385,9 +385,9 @@ function Contact() {
                 {status && (
                   <p
                     className={`text-sm mt-2 ${
-                      status.includes("✅")
+                      status.includes("")
                         ? "text-success"
-                        : status.includes("❌")
+                        : status.includes("")
                         ? "text-error"
                         : "text-warning"
                     }`}
