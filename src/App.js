@@ -24,7 +24,6 @@ export default function App() {
       <div className="relative z-10">
         <CustomCursor />
         <Navbar />
-
         <section id="home">
           <HeroSection />
         </section>
